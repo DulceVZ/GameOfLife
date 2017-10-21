@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game of life</title>
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	</head>
+	<body>
+		<h1> Game of life </h1>
+		Width: <input type="number" class="size" title="width" id="width" value="10" min="2">
+		High: <input type="number" class="size" title="high" id="high" value="10" min="2">
+		<button title="Generate matrix" onclick="changeSize()"> Generate </button>
+		<div id="buttons">
+			<button title="Fill matrix" onclick="fill()" > Fill </button>
+			<button title="Automatic steps" onclick="start()"> Automatic steps </button>
+			<button title="Step by step" onclick="nextStep()"> Step by step </button>
+			<button title="Stop game" onclick="stop()" title="Stop"> Stop </button>
+			<button title="Clean matrix" onclick="clean()" > Clean </button>
+		</div>
+		<table id="table">
+			<tbody id='board'></tbody>
+		</table>
+		<script type="text/javascript" src="functions/functions.js"></script>
+		 <div id="footer">
+		 	<b>By Dulce Vargas</b>
+		 <div>
+	</body>
+</html>
